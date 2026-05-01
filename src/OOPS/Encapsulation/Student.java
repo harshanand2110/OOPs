@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Encapsulation;
 
 public class Student {
     //attributes
@@ -7,17 +7,28 @@ public class Student {
     public String name;
     public int roll;
 
-    //Default Constructor // attributes
-    public Student(){
-        System.out.println("default  ctor called");
+    public String getGf() {
+        return gf;
     }
 
+    public void setGf(String gf) {
+        this.gf = gf;
+    }
+
+    private String gf;
+
+    //Default Constructor // attributes
+//    public Student(){
+//        System.out.println("default  ctor called");
+//    }
+
     //Parameterised Constructor
-    public Student(int id , int age , String name , int roll){
+    public Student(int id , int age , String name , int roll, String gf){
         this.id = id;
         this.age = age;
         this.name = name;
         this.roll = roll;
+        this.gf = gf;
     }
 
     //methods or behaviours
@@ -29,6 +40,9 @@ public class Student {
     }
     public void eat(){
         System.out.println("eating");
+    }
+    public void gfChatting(){
+        System.out.println("chatiing to gf");
     }
 
 }

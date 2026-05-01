@@ -1,7 +1,5 @@
 package OOPS.Encapsulation;
 
-import OOPS.Student;
-
 public class Demo {
     public static void main(String[] args) {
 
